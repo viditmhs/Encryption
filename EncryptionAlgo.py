@@ -21,9 +21,12 @@ class EncryptionAlgo:
 		
 		encryp = ''
 		encryptionLenght = 	len(self.encryptor);
+		print(encryptionLenght)
 		while(1):
 			idx = self.encryptee%(encryptionLenght);
+			print("remainder",idx)
 			self.encryptee = int(self.encryptee/encryptionLenght);
+			print("index of encryptor",self.encryptee)
 			encryp = (self.encryptor[idx]) + encryp;
 			if(self.encryptee<=0):
 				break;

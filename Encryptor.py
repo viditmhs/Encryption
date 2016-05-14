@@ -18,7 +18,8 @@ class Encryptor:
 		
 		for line in _file:
 			if(line[0]=='#'):
-				print('LOG: ' + line )
+				#print('LOG: ' + line )
+				continue
 			else:
 				self.encryptor.append(line);
 		
